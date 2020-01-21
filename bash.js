@@ -7,13 +7,8 @@
 //   process.stdout.write('\nprompt > ');
 // });
 
-//code pwd
-process.stdout.write('prompt > ');
+const pwd = require('./pwd')
+pwd()
 
-process.stdin.on('data', data => {
-  const cmd = data.toString().trim();
-  if (cmd === 'pwd') {
-    process.stdout.write(`Current directory: ${process.cwd()}`);
-  }
-  process.stdout.write('\nprompt > ');
-});
+const ls = require('./ls')
+ls()
