@@ -7,8 +7,11 @@
 //   process.stdout.write('\nprompt > ');
 // });
 
-const pwd = require('./pwd')
-pwd()
+const pwd = require('./pwd');
+pwd();
 
-const ls = require('./ls')
-ls()
+const ls = require('./ls');
+ls();
+
+const cat = require('./cat');
+cat();
